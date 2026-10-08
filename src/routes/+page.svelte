@@ -1,11 +1,13 @@
 <script lang="ts">
-    import Hello from '#banana/Hello.svelte';
+    import ProjectCard from '#components/ProjectCard.svelte';
 
     let name = "zaquel porra"
 </script>
+
+
 <h1>Welcome {name}</h1>
 
+<ProjectCard />
 
-<Hello />
 
 
