@@ -27,10 +27,12 @@ let {
 
 .project-card {
     border: 1px solid #ccc;
-            border-radius: 8px;
+    border-radius: 8px;
     padding: 16px;
-    width: 300px;
-           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
 }
 

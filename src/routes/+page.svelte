@@ -1,10 +1,9 @@
 <script lang="ts">
-    import ProjectCard from '#components/ProjectCard.svelte';
     import Introduction from '#lib/components/Introduction.svelte';
+    import LatestProjects from '#lib/components/LatestProjects.svelte';
     import LatestWritings from '#lib/components/LatestWritings.svelte';
     import LeftSidebar from '#lib/components/LeftSidebar.svelte';
     import RighhtSidebar from '#lib/components/RighhtSidebar.svelte';
-    import {projects} from '#lib/data/projects.ts';
 
 </script>
 
@@ -16,22 +15,11 @@
         <!--Page content -->
         <Introduction />
         <LatestWritings />
+        <LatestProjects />
     </main>
 
     <RighhtSidebar />
 </div>
-
-<!--
-
-{#each projects as project (project.slug)}
-    <ProjectCard
-        name={project.name}
-        description={project.description}
-        image={project.image}
-        githubLink={project.githubLink}
-    />
-{/each}
--->
 
 
 <style>
@@ -42,7 +30,6 @@
 
   width: 100%;
   height: 100vh;
-  overflow: hidden;
 
   padding: 2rem;
   box-sizing: border-box;
@@ -51,7 +38,7 @@
 main {
   min-width: 0;
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
 
   justify-self: center;
 
