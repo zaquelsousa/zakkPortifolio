@@ -1,10 +1,18 @@
-<script>
+<script lang="ts">
 
-let {name = "project name",
+interface Props{
+    name: string;
+    description: string;
+    image?: string;
+    githubLink?: string
+}
+
+let {
+    name = "project name",
     description,
     image,
     githubLink
-} = $props();
+}: Props = $props();
 
 </script>
 
