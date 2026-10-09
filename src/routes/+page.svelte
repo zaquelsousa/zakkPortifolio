@@ -2,16 +2,20 @@
     import ProjectCard from '#components/ProjectCard.svelte';
     import Introduction from '#lib/components/Introduction.svelte';
     import LeftSidebar from '#lib/components/LeftSidebar.svelte';
+    import RighhtSidebar from '#lib/components/RighhtSidebar.svelte';
     import {projects} from '#lib/data/projects.ts';
 
 </script>
 
 <div class="layout">
     <LeftSidebar />
+    
     <main>
         <!--Page content -->
         <Introduction />
     </main>
+
+    <RighhtSidebar />
 </div>
 
 <!--
@@ -30,22 +34,24 @@
 <style>
 .layout {
   display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
-  gap: 2.5rem;
+  grid-template-columns: 180px minmax(0, 1fr) 190px;
+  gap: 2rem;
 
   width: 100%;
   height: 100vh;
   overflow: hidden;
 
-  max-width: 1440px;
   padding: 2rem;
   box-sizing: border-box;
 }
 
 main {
   min-width: 0;
-  min-height: 0;
-  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+
+  justify-self: center;
+
 }
 
 @media (max-width: 640px) {
