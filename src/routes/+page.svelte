@@ -1,18 +1,21 @@
 <script lang="ts">
     import ProjectCard from '#components/ProjectCard.svelte';
     import Introduction from '#lib/components/Introduction.svelte';
+    import LatestWritings from '#lib/components/LatestWritings.svelte';
     import LeftSidebar from '#lib/components/LeftSidebar.svelte';
     import RighhtSidebar from '#lib/components/RighhtSidebar.svelte';
     import {projects} from '#lib/data/projects.ts';
 
 </script>
 
+<!--TODO: fix left and right side bar scrolliung-->
 <div class="layout">
     <LeftSidebar />
     
     <main>
         <!--Page content -->
         <Introduction />
+        <LatestWritings />
     </main>
 
     <RighhtSidebar />
