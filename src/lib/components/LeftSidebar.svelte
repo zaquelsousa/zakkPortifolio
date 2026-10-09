@@ -96,11 +96,10 @@
     flex-direction: column;
     justify-content: space-between;
 
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    padding: 1.5rem 1rem;
+    height: 100%;
+    min-height: 0;
     box-sizing: border-box;
+    padding: 1.5rem 1rem;
   }
 
   .navigation {
